@@ -33,5 +33,5 @@ composer:
     install: '1'
 app:
     project_root: '/projects/basic.local'
-git_token: '760c36de355079521c42b00a705784e8120f26b2'
+git_token: ''
 

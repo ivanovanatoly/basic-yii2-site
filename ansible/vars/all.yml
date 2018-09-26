@@ -1,0 +1,37 @@
+---
+server:
+    install: '1'
+    packages: [git]
+    timezone: UTC
+    locale: en_US.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: basic.local, ip: 192.168.33.130, memory: '2048', sharedfolder: ./, useVagrantCloud: '1', syncType: nfs }
+nginx:
+    install: '1'
+    docroot: /projects/basic.local/web
+    servername: basic.local
+mysql:
+    install: '1'
+    root_password: '1234567890'
+    database: basic
+    user: admin
+    password: '1234567890'
+    dump: ''
+redis:
+    install: '1'
+    port: '6379'
+php:
+    install: '1'
+    ppa: php
+    version: '5.6'
+    packages: [php5.6-cli, php5.6-intl, php5.6-mcrypt, php5.6-common, php5.6-gd, php5.6-mbstring, php5.6-mysql, php-pear, php5.6-curl, php5.6-fpm, php5.6-xml]
+    pecl_packages: [timezonedb]
+xdebug:
+    install: '1'
+composer:
+    install: '1'
+app:
+    project_root: '/projects/basic.local'
+git_token: '760c36de355079521c42b00a705784e8120f26b2'
+

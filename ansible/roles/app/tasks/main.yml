@@ -1,0 +1,23 @@
+---
+# application tasks to be customized and to run after the main provision
+
+- name: Add composer-asset-plugin
+  sudo: false
+  shell: /usr/local/bin/composer global require "fxp/composer-asset-plugin:~1.4.2"
+
+- name: Add git-token
+  sudo: false
+  shell: composer config -g github-oauth.github.com {{ git_token }}
+
+- name: Run Composer
+  sudo: false
+  shell: /usr/local/bin/composer install chdir={{ app.project_root }}
+
+- name: Applying User Migrations
+  sudo: false
+  shell: /usr/bin/php {{ app.project_root }}/yii migrate --migrationPath=@app/modules/user/migrations --interactive=0
+
+- name: Applying Common Migrations
+  sudo: false
+  shell: /usr/bin/php {{ app.project_root }}/yii migrate --interactive=0
+

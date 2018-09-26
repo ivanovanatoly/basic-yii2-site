@@ -1,0 +1,26 @@
+.col-pic-item{float:left;width:15px;height:15px;border:solid 1px #FFF;margin:0px}
+.col-pic-picker{width:50px;height:50px;border: solid 2px #666;}
+.col-pic-item:hover{border:solid 1px #00FF00}
+.col-pic-palette{width:306px;border:solid 2px #666}
+
+.col-safe-item{float:left;width:40px;height:40px;border:solid 1px #FFF;margin:0px}
+.col-safe-picker{width:50px;height:50px;border: solid 2px #666;}
+.col-safe-item:hover{border:solid 1px #00FF00}
+.col-safe-palette{width:500px;border:solid 2px #666;opacity:1}
+.col-safe-palette.markers{width:383px}
+
+.col-pic-closer,.col-safe-closer{
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    background: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background: #000;
+}

@@ -1,0 +1,216 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
+}
+
+.wrap > .container {
+  padding: 70px 15px 20px;
+}
+
+.footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.not-set {
+  color: #c55;
+  font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
+}
+
+a.asc:after {
+  content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+  content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+  content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+  content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+  content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+  content: "\e156";
+}
+
+.grid-view th {
+  white-space: nowrap;
+}
+
+.hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #999;
+}
+
+.error-summary {
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px 0;
+}
+
+[class^="ti-"]:before, [class*=" ti-"]:before {
+  font-family: 'themify' !important;
+}
+
+img.brand-icon {
+  width: 26px;
+  height: 26px;
+  margin: 8px 0 0 5px;
+}
+
+.fixed-fluid > .fixed-sm-100 {
+  width: 100px;
+}
+
+.fixed-fluid > .fixed-50 {
+  width: 50px;
+}
+
+.auth-clients {
+  font-size: 21px;
+  line-height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.auth-clients .fa-vk {
+  color: #5e81a8;
+}
+
+.auth-clients .fa-facebook {
+  color: #128ef2;
+}
+
+.auth-clients .fa-twitter {
+  color: #008fa1
+}
+
+.notification-alert {
+  width: 8px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border-radius: 50%;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: 1px solid #C42700;
+  box-shadow: 0 0 0 0 rgba(196, 39, 0, 0.7), inset 0 1px 0 #7F0600;
+  vertical-align: middle;
+  background: #ff0000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #C42700), color-stop(100%, #7F0600));
+  background-image: -webkit-linear-gradient(#C42700, #7F0600);
+  background-image: -moz-linear-gradient(#C42700, #7F0600);
+  background-image: -o-linear-gradient(#C42700, #7F0600);
+  background-image: linear-gradient(#C42700, #7F0600);
+  cursor: pointer;
+  -webkit-animation: pulse 1s infinite cubic-bezier(0.6, 0, 0, 1);
+}
+
+.notification-alert:hover {
+  -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 15px rgba(196, 39, 0, 0), inset 0 1px 0 #7F0600;
+  }
+}
+
+/* Ссылки на публичный сайт */
+a.public-link, a.public-link:hover {
+  color: #42a5f5;
+}
+
+a.public-link.disabled {
+  color: gray;
+  cursor: default;
+}
+
+/* Ссылки в GridView */
+a.grid-link, a.grid-link:hover {
+  border-bottom: 1px dotted;
+  color: #42a5f5;
+}
+
+a.grid-link.disabled {
+  color: gray;
+  pointer-events: none;
+}
+
+/* Выпадающее меню дочерних лиг */
+.related-leagues-list > .dropdown-toggle {
+  max-width: 500px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.related-leagues-list ul {
+  max-width: 320px;
+  max-height: 440px;
+  overflow-y: auto;
+}
+
+/* Блокировка кнопкии с .btn-labeled */
+.btn-labeled.js-locker-locked:before {
+  content: "\e619" !important;
+  font-family: 'themify' !important;
+  animation-name: spin;
+  animation-duration: 600ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background: none;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

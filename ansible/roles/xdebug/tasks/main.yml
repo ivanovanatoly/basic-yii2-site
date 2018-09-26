@@ -1,0 +1,9 @@
+---
+- name: Install xDebug
+  sudo: yes
+  apt: pkg=php{{ php.version }}-xdebug state=latest
+
+- name: Change default xdebug config
+  sudo: yes
+  template: src=default.tpl dest=/etc/php/{{ php.version }}/mods-available/xdebug.ini
+  notify: restart php{{ php.version }}-fpm

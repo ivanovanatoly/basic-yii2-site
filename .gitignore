@@ -1,0 +1,50 @@
+# phpstorm project files
+.idea
+
+# vagrant files
+.vagrant
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+ansible/playbook.retry
+
+/web/static/club/img/*
+/web/static/player/img/*
+/web/static/post/img/*
+/web/static/representative/img/*
+/web/static/subject/img/*
+/web/static/team/img/*
+/web/static/tournament/img/*
+/web/img/team/*
+/web/img/club/*
+
+/config/web.local.php
+/config/console.local.php
+/config/params.local.php
+
+/deploy/hosts.local.yml
+
+.data
